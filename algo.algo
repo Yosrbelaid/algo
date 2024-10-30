@@ -19,6 +19,7 @@ BEGIN
         END_IF
     END_FOR
     write("the sum of the words is ",s)
+    m:=0
     FOR k FROM 0 TO n-1 STEP   DO
         IF (majus(ch[i])in[A,E,I,O,U]) THEN
             m=m+1
