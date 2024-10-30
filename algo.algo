@@ -1,0 +1,28 @@
+ALGORITHM checkpoint
+VAR
+    i,j,k,n,s,m:INTEGER;
+    ch:STRING;
+BEGIN
+    write("write a sentence that finishes with a point")
+    read(ch)
+    n:=0
+    FOR i FROM 0 TO ch.length STEP 1  DO
+        IF (ch[i]<>"") THEN
+            n:=n+1
+        END_IF
+    END_FOR
+    write("the length is ",n)
+    s:=0
+    FOR j FROM 0 TO n-1 STEP 1  DO
+        IF (ch[i]<>" " or ch[i]<>".") THEN
+            s:=s+1
+        END_IF
+    END_FOR
+    write("the sum of the words is ",s)
+    FOR k FROM 0 TO n-1 STEP   DO
+        IF (majus(ch[i])in[A,E,I,O,U]) THEN
+            m=m+1
+        END_IF
+    END_FOR
+    write("the sum of the vowels is ",m)
+END
